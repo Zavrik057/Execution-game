@@ -1,11 +1,13 @@
 import { styled } from "@mui/material";
 import { getStatusStyles } from "./getStatusStyles";
 
-export const KeyboardWrapper = styled('div')(() => ({
+export const KeyboardWrapper = styled('div')(({ theme }) => ({
    display: 'grid',
-   gridTemplateColumns: 'repeat(10, 50px)',
    alignItems: 'center',
    gap: '10px',
+   [theme.breakpoints.down('sm')] : {
+      gridTemplateColumns: 'repeat(8, 60px)',
+   }
 }));
 
 type KeyboardKeyProp = {

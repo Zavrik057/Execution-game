@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 
 
-export const ExecutionStyled = styled('div')(() => ({
+export const ExecutionStyled = styled('div')(({ theme }) => ({
    position: 'relative',
    display: "inline-block",
    scale: 0.8,
