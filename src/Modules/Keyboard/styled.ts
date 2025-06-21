@@ -4,9 +4,10 @@ import { getStatusStyles } from "./getStatusStyles";
 export const KeyboardWrapper = styled('div')(({ theme }) => ({
    display: 'grid',
    alignItems: 'center',
+   gridTemplateColumns: 'repeat(10, 50px)',
    gap: '10px',
    [theme.breakpoints.down('sm')] : {
-      gridTemplateColumns: 'repeat(8, 60px)',
+      gridTemplateColumns: 'repeat(7, 70px)',
    }
 }));
 
